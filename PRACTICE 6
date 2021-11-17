@@ -1,0 +1,46 @@
+2)
+
+def cumsum(t):
+  x = []
+  summ = 0
+  for i in t:
+    summ+=int(i)
+    x.append(summ)
+  return x
+  
+  
+3)
+  
+  def middle(t):
+    return t[1: -1]
+  e = middle(t)
+  
+  
+4)
+  
+  def chop(t):
+    t[1: -1]
+
+
+5)
+
+def ls_sorted(t):
+  return t == sorted(t)
+  
+  
+6)
+
+def is_anagram(word1, word2):
+  return sorted(word1) == sorted(word2)
+  
+  
+7)
+
+def has_duplicates(s):
+  x = 'False'
+  t = sorted(s)
+  for i in range(len(t)):
+    if t[i] == t[t-i]:
+      x = 'True'
+      break
+  return x
